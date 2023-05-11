@@ -1,0 +1,12 @@
+{
+    "gtkTheme": "Everforest-Light-BL",
+    "kvantumTheme": "",
+    "iconTheme": "Everforest-Light",
+    "colorScheme": "everforest-light",
+    "vsCodeTheme": "Everforest Light",
+    "vsCodeExtraColors" : "",
+    "nvimTheme": "everforest_light",
+    "obsidianTheme": "Everforest",
+    "font": "JetBrainsMono Nerd Font",
+    "darkReaderColors": {"background": "#fdf6e3", "text": "#5c6a72"}
+}

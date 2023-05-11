@@ -1,0 +1,85 @@
+@import "../colors/everforest.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: JetBrainsMono Nerd Font, FontAwesome;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: @fg;
+  color: @bg0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px 0px 15px 15px;
+  transition-duration: .5s;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #7d6a40;
+  border-bottom-style: solid;
+}
+
+#custom-launcher,
+#clock,
+#clock-date,
+#workspaces,
+#pulseaudio,
+#network,
+#battery,
+#custom-powermenu {
+  background-color: @bg0;
+  color: @fg;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+	border-radius: 10px;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #161a1d;
+  border-bottom-style: solid;
+}
+
+#workspaces {
+  padding: 0px;
+}
+
+#workspaces button.active {
+  background-color: @blue;
+  color: @bg0;
+
+	border-radius: 10px;
+
+  margin-bottom: -5px;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #366660;
+  border-bottom-style: solid;
+}
+
+#custom-launcher {
+  background-color: @green;
+  color: @bg0;
+  border-bottom-color: #556a35;
+
+  margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+#custom-powermenu {
+  background-color: @red;
+  color: @bg0;
+  border-bottom-color: #951c1f;
+
+  margin-right: 15px;
+  padding-left: 20px;
+  padding-right: 23px;
+}

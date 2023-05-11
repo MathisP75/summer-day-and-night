@@ -1,0 +1,71 @@
+@import ".config/wofi/colors/everforest-light.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font, FontAwesome;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+window {
+    margin: 0px;
+    background-color: @fg;
+    color: @bg0;
+
+	border-radius: 15px;
+
+    border-bottom-width: 5px;
+    border-bottom-color: #2e3538;
+    border-bottom-style: solid;
+}
+
+#outer-box {
+    margin: 0px;
+    border-radius: 0px;
+}
+
+#input {
+    background-color: @green;
+    color: @bg0;
+
+    margin: 15px;
+    padding: 10px;
+    border: none;
+
+    border-bottom-width: 5px;
+    border-bottom-color: #465000;
+    border-bottom-style: solid;
+}
+
+#inner-box {
+    margin: 20px;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: #00000000;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#entry {
+    border: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+#entry:selected {
+    background-color: @bg0;
+    color: @fg;
+
+    border-bottom-width: 5px;
+    border-bottom-color: @bg5;
+    border-bottom-style: solid;
+}
