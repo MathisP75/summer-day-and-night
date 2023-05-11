@@ -29,20 +29,20 @@ Summer Day | Summer Night
 # For the borders in Hyprland:
 The borders are quite unique and have a sort of 3D effect at the bottom to match the bar and launcher I made. This is achievable only with some modifications to Hyprland's code for the moment, but it could easily be made into a plugin. Here are the necessary changes to make in `src/render/decorations/CHyprDropShadowDecoration.cpp`, inside `void CHyprDropShadowDecoration::draw(CMonitor* pMonitor, float a, const Vector2D& offset)`:
 
-Added **- (*PBORDERSIZE)** (line 82)
+**Added `- (*PBORDERSIZE)` (line 82)**
 ```
-// draw the shadow
+// draw the shadow`
     wlr_box fullBox = {m_vLastWindowPos.x - *PSHADOWSIZE - (*PBORDERSIZE), m_vLastWindowPos.y - *PSHADOWSIZE, m_vLastWindowSize.x + 2.0 * *PSHADOWSIZE + (2.0 * *PBORDERSIZE), m_vLastWindowSize.y + 2.0 * *PSHADOWSIZE};
 ```
 
-Added **+ (2.0 * *PBORDERSIZE)** (line 101)
+**Added `+ (2.0 * *PBORDERSIZE)` (line 101)**
 ```
-    else {
+    els`e {
         fullBox.x += ((m_vLastWindowSize.x + 2.0 * *PSHADOWSIZE + (2.0 * *PBORDERSIZE)) - NEWSIZE.x) / 2.0;
     }
 ```
 
-Added **+3** (line 153)
+**Added `+ 3` (line 153)**
 ```
     scaleBox(&fullBox, pMonitor->scale);
     g_pHyprOpenGL->renderRoundedShadow(&fullBox, (ROUNDING + 3) * pMonitor->scale, *PSHADOWSIZE * pMonitor->scale, a);
